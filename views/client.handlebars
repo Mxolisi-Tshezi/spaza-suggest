@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container-fluid bg-1 ">
+    <form autocomplete="off" class="center form-horizontal" action="/" method="POST">
+
+        <div class="reg-container">
+            <div class="topnav">
+                <a class="active" href="/">Home</a>
+                <a href="/login/Admin" type="" name="">Spaza-Owner</a>
+
+                {{!-- <a href="#about">About</a> --}}
+            </div>
+            <br>
+            <h2 class="client"><b>Spaza Shop Suggestions
+            </b></h2>
+            <div class="center form-group">
+                {{#if messages.success}}
+                <div class="alert alert-succ">
+                    <p id="successMessage">{{messages.success}}</p>
+
+                </div>
+                {{/if}}
+
+                {{#if messages.error}}
+                <div id="successMessage" class="alert alert-error">
+                    <p id="successMessage"> {{messages.error}}</p>
+                    <script
+                        type="text/javascript">window.setTimeout("document.getElementById('successMessage').style.display='none';", 3000); </script>
+                </div>
+
+                {{/if}}
+
+
+
+                <div class="logina">
+
+                    <h2 class="client"><b>sign-up or Sign-In</b></h2>
+
+                    <div class="form-group">
+                            <input class="form-control" type="text" name="username" placeholder="Username">
+                    </div>
+                    <br>
+
+
+                    <div class="form-group">
+                            <input class="form-control" type="text" name="lastname" placeholder="Password">
+                    </div>
+
+                    <br>
+                        <button class="logBtn" type="submit">Submit</button>
+
+                        <br>
+                        <br>
+                        <button class="logBtn" type="submit">login</button>
+
+                        <br>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1>LOGIN</h1>
+<div class="logina">
+  {{!-- <h2 class="font-bold underline text-center pt-5">
+    Hi {{username}}, Welcome to the spaza-suggestion app!
+  </h2> --}}
+
+
+  {{#if messages.success}}
+  <div class="alert alert-succ text-center">
+    <p id="successMessage"> {{messages.success}}</p>
+  </div>
+  {{/if}}
+
+  {{#if messages.errormsg}}
+  <div id="successMessage" class="alert alert-error">
+    <p id="successMessage"> <b>{{messages.errormsg}}</b></p>
+    <script
+      type="text/javascript">window.setTimeout("document.getElementById('successMessage').style.display='none';", 2000); </script>
+
+  </div>
+  {{/if}}
+  <br>
+
+  <form class="form-horizontal" action="/login/{{username}}" method="POST">
+    <div class="form-group ">
+
+      <label for="">Login code:</label>
+      <br>
+      <br>
+        <input type="text" name="addCode" placeholder="Enter Login code here">
+      <br>
+      <br>
+        <button class="logBtn" type="submit">Submit</button>
+        <br>
+<br>If not registered click Sign-Up below<br><br>
+
+                 <button class="logBtn" type="submit">Sign-Up</button>
+
+    </div>
+
+  </form>
+
+
+</div>
+</body>
+</html>
+
+
+
+
