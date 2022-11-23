@@ -43,8 +43,8 @@ app.use(flash());
 
 app.use(express.static('public'))
 
-// const db = pgp(config);
-// const waitersFunction = SpazaSuggest(db)
+const db = pgp(config);
+const waitersFunction = SpazaSuggest(db)
 
 app.get('/', function (req, res) {
    res.render('index')
