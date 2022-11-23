@@ -1,3 +1,6 @@
+[![Node.js CI](https://github.com/Mxolisi-Tshezi/spaza-suggest/actions/workflows/node.js.yml/badge.svg)](https://github.com/Mxolisi-Tshezi/spaza-suggest/actions/workflows/node.js.yml)
+
+
 # Spaza suggest
 
 Create an app that help Spaza Shops to crowdsource which products to sell in their shops.
