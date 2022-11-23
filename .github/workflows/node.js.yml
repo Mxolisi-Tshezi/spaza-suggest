@@ -34,8 +34,8 @@ jobs:
       run: npm install
     - name: create postgresql tables
        - run: |
-        PGPASSWORD=suggest123 psql -h localhost -U test -d spaza_suggest_test -a -f './sql/002.tables.sql'
-        PGPASSWORD=suggest123 psql -h localhost -U test -d spaza_suggest_test -a -f './sql/003.areas.sql'
+        PGPASSWORD=suggest123 psql -h localhost -U test -d spaza_suggest -a -f './sql/002.tables.sql'
+        PGPASSWORD=suggest123 psql -h localhost -U test -d spaza_suggest -a -f './sql/003.areas.sql'
     - name: run tests with postgresql
       run:
         npm test
