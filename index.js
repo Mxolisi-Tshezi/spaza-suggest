@@ -50,7 +50,7 @@ app.get('/login/:name', spazaRoute.Login);
 app.post('/login/:name', spazaRoute.getUsersCode);
 app.get('/Addsuggestion/:name', spazaRoute.Addsuggestion)
 
-const PORT = process.env.PORT || 1943
+const PORT = process.env.PORT || 1925
 app.listen(PORT, function () {
    console.log('App started at port:', PORT)
 })
